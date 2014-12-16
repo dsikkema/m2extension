@@ -1,14 +1,30 @@
 # Demo Extension
 
-Access extension at this url: <magento-base-url>/hello_extension/index/sayhello
+Access extension at this url: <magento-base-url>/demo_extension/index/sayhello
+
+## Composer Deployment
+To deploy the extension using composer, add the following line to the root composer.json->require:
+"m2demo/module-m2-extension": "*"
+
+Then run **composer update**.
+
+## Integration with Magento
+
+If the application is already installed, add the name of the module to the module array in app/etc/config.php as a key with the value of 1. The means the module is enabled.
+
+If the application is re-installed while the module exist in app/code, it will recognize the module and put it in app/etc/config.php automatically.
+
+If the module has any database scripts, the installer will have to run to incorporate them.
+
+
 ## Components
 
 ### composer.json
 
 #### Root
 
-To autoload classes in the module, the root composer.json must be updated. Place the following line in the autoload->psr-4 section:
-"Hello\\": "app/code/Hello/"
+To autoload classes in the module more quickly, the root composer.json must be updated. Place the following line in the autoload->psr-4 section:
+"M2Demo\\": "app/code/M2Demo/"
 
 For reference, see [Composer's autoloading documentation.](https://getcomposer.org/doc/01-basic-usage.md#autoloading)
 
@@ -36,12 +52,12 @@ Extension/etc/**area**/routes.xml
 The module.xml file defines the name of the module. If any of the module's dependencies need to be loaded in a particular sequence, this file can also store that sequence.
 
 ### Controller
-The controller class is in Hello/Extension/Controller/Index/SayHello.php. 
+The controller class is in app/code/M2Demo/M2Extension/Controller/Index/SayHello.php. 
 
 #### URL
-The controller is accessed at the URL <magento-base-url>/hello_extension/index/sayhello
+The controller is accessed at the URL <magento-base-url>/demo_extension/index/sayhello
 
-- **hello_extension** is the frontname of the module
+- **demo_extension** is the frontname of the module
 - **index** is the namespace of the controller (slightly different from the namespace of the class but related).
 - **sayhello** is the action name.
  
