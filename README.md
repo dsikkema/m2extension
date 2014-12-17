@@ -109,6 +109,10 @@ To see the reference module at work, enter the following URL in your browser's a
 
 	http[s]://<your web server IP or host name>/<your Magento base dir>/demo_extension/index/sayhello
 
+For example,
+
+	http://www.example.com/magento/demo_extension/index/sayhello
+
 A list of Magento modules displays. That's it! You're done!
 
 
