@@ -34,22 +34,23 @@ To add the module to your Magento installation:
 1.	Log in to your Magento server as a user with privileges to write to the web server docroot (typically either the `root` user or the web server user).
 2.	Enter the following commands in the order shown:
 
-	cd <your Magento install dir>/app/code
-	mkdir -p m2demo/module-m2-extension
+	<pre>cd <your Magento install dir>/app/code
+	mkdir -p m2demo/module-m2-extension</pre>
 
 3.	Go to the <a href="https://github.com/coldgreentea/m2extension" target="_blank">reference module GitHub</a>.
 4.	Click **Download Zip**.
-5.	Copy the `.zip` file you downloaded to your Magento server's <magento install dir>/app/code/m2demo/module-m2-extension` directory.
+5.	Copy the `.zip` file you downloaded to your Magento server's `<magento install dir>/app/code/m2demo/module-m2-extension` directory.
 6.	Enter the following commands in the order shown:
 
-	unzip unzip m2extension-master.zip
+	<pre>unzip m2extension-master.zip
 	mv m2extension-master/* .
-	rm -rf m2extension-master
+	rm -rf m2extension-master</pre>
 
 6.	Open `<your Magento install dir>/app/config.php` in a text editor.
-7.	Add the following anywhere under: 'modules' => array (`:
+7.	Add the following anywhere under: `'modules' => array (`:
 
-	 'M2Demo_M2Extension' => 1,
+	 <pre>M2Demo_M2Extension' => 1</pre>
+
 8.	Save your changes and exit the text editor.
 
 ### Installing the module using Composer
@@ -66,13 +67,13 @@ To use Composer to install the module:
 3.	Open `composer.json` in a text editor.
 4.	Add the following line in the `"require":` section:
 
-	"m2demo/module-m2-extension": "*"
+	<pre>"m2demo/module-m2-extension": "*"</pre>
 
 	**Note**: Make sure the preceding line ends with a comma character.
 
-5.	In the `"psr-4":` section, add the following line:
+5.	In the `autoload": { "psr-4"` section, add the following line:
 
-	"M2Demo\\": "app/code/M2Demo/"
+	<pre>"M2Demo\\": "app/code/M2Demo/"</pre>
 
 	**Note**: Make sure the preceding line ends with a comma character.
 
@@ -95,8 +96,8 @@ To use Composer to install the module:
 
 2.	Enter the following commands in the order shown to clear the Magento cache:
 
-	cd <your Magento install dir>/var
-	rm -rf cache page_cache
+	<pre>cd <your Magento install dir>/var
+	rm -rf cache page_cache</pre>
 
 9.	If you're currently logged in to the Magento Admin, log out.
 10.	Log in to the Magento Admin as an administrator.
