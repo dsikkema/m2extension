@@ -2,6 +2,8 @@
 
 Access extension at this url: <magento-base-url>/demo_extension/index/sayhello
 
+This demo extension is provided as a reference module, so that users can view the various files, the syntax within the files, etc. Magento does not recommend that you use this exact module within your Magento 2 environment.
+
 ## Composer Deployment
 To deploy the extension using composer, add the following line to the root composer.json->require:
 "m2demo/module-m2-extension": "*"
