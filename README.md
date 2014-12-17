@@ -27,7 +27,7 @@ Any Magento module requires a particular directory structure under `<your Magent
 
 The reference module requires the following structure:
 
-	m2demo/module-m2-extension
+	M2demo/M2Extension
 
 To add the module to your Magento installation:
 
@@ -35,7 +35,7 @@ To add the module to your Magento installation:
 2.	Enter the following commands in the order shown:
 
 	<pre>cd <your Magento install dir>/app/code
-	mkdir -p m2demo/module-m2-extension</pre>
+	mkdir -p M2demo/M2Extension</pre>
 
 3.	Go to the <a href="https://github.com/coldgreentea/m2extension" target="_blank">reference module GitHub</a>.
 4.	Click **Download Zip**.
