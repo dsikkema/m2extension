@@ -1,0 +1,17 @@
+{
+  "name": "m2demo/module-m2-extension",
+  "description": "Bare-bones demo extension",
+  "require": {
+    "php": "~5.4.11|~5.5.0",
+    "magento/magento-composer-installer": "*"
+  },
+  "type": "magento2-module",
+  "extra": {
+    "map": [
+      [
+        "*",
+        "M2Demo/M2Extension"
+      ]
+    ]
+  }
+}
