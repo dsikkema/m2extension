@@ -113,15 +113,19 @@ To use Composer to install the module:
 6. Save your changes and exit the text editor.
 
 7. From your Magento installation directory, enter the following commands in the order shown:
+
 ```
 composer dump-autoload
 composer update
 ```
+
 6. Open `<your Magento install dir>/app/config.php` in a text editor.
 7. Add the following anywhere under: `modules' => array (`:`
+
 ```
 'M2Demo_M2Extension' => 1,
 ```
+
 8. Save your changes and exit the text editor.
 
 
@@ -129,10 +133,12 @@ composer update
 
 1. Log in to your Magento server as a user with `root` privileges.
 2. Enter the following commands in the order shown to clear the Magento cache:
+
 ```
 cd <your Magento install dir>/var
 rm -rf cache page_cache
 ```
+
 3. If you're currently logged in to the Magento Admin, log out.
 4. Log in to the Magento Admin as an administrator.
 5. Click **Stores** > **Configuration** > ADVANCED > **Advanced** > **Disable Modules Output**.
@@ -140,13 +146,17 @@ rm -rf cache page_cache
 If **m2demo_module-m2-extension** displays in alphabetical order, you successfully installed the reference module!
 
 To see the reference module at work, enter the following URL in your browser's address or location field:
+
 ```
 http[s]://<your web server IP or host name>/<your Magento base dir>/demo_extension/index/sayhello
 ```
+
 For example:
+
 ```
 http://www.example.com/magento/demo_extension/index/sayhello
 ```
+
 A list of Magento modules displays. That's it! You're done!
 
 
