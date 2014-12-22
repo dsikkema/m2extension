@@ -46,7 +46,7 @@ To add the module to your Magento installation:
 	mv m2extension-master/* .
 	rm -rf m2extension-master</pre>
 
-6.	Open `<your Magento install dir>/app/config.php` in a text editor.
+6.	Open `<your Magento install dir>/app/etc/config.php` in a text editor.
 7.	Add the following anywhere under: `'modules' => array (`:
 
 	 <pre>'M2Demo_M2Extension' => 1</pre>
@@ -83,8 +83,8 @@ To use Composer to install the module:
 	composer dump-autoload
 	composer update
 
-6.	Open `<your Magento install dir>/app/config.php` in a text editor.
-7.	Add the following anywhere under: 'modules' => array (`:
+6.	Open `<your Magento install dir>/app/etc/config.php` in a text editor.
+7.	Add the following anywhere under: `'modules' => array (`:
 
 	 <pre>'M2Demo_M2Extension'</pre> => 1,
 8.	Save your changes and exit the text editor.
