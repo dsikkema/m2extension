@@ -63,7 +63,6 @@ To install any module using `composer update`, you must modify the Magento 2 `co
 
 To use Composer to install the module:
 
-<<<<<<< HEAD
 1.	Log in to your Magento server as a user with `root` privileges.
 
 	**Note**: On Ubuntu, you might need to use the `sudo su` command.
@@ -91,7 +90,8 @@ To use Composer to install the module:
 6.	Open `<your Magento install dir>/app/etc/config.php` in a text editor.
 7.	Add the following anywhere under: `'modules' => array (`:
 
-	 <pre>'M2Demo_M2Extension'</pre> => 1,
+		'M2Demo_M2Extension' => 1,
+
 8.	Save your changes and exit the text editor.
 
 1. Log in to your Magento server as a user with `root` privileges.
@@ -103,19 +103,22 @@ To use Composer to install the module:
 "m2demo/module-m2-extension": "*"
 ```
    **Note**: Make sure the preceding line ends with a comma character.
+
 5. In the `autoload": { "psr-4"` section, add the following line:
 ```
 "M2Demo\\": "app/code/M2Demo/"
 ```
    **Note**: Make sure the preceding line ends with a comma character.
+
 6. Save your changes and exit the text editor.
+
 7. From your Magento installation directory, enter the following commands in the order shown:
 ```
 composer dump-autoload
 composer update
 ```
 6. Open `<your Magento install dir>/app/config.php` in a text editor.
-7. Add the following anywhere under: 'modules' => array (`:
+7. Add the following anywhere under: `modules' => array (`:`
 ```
 'M2Demo_M2Extension' => 1,
 ```
