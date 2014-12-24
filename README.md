@@ -19,21 +19,22 @@ You can install the reference module in any of the following ways:
 ### Installing the module by copying code
 
 Any Magento module requires a particular directory structure under `<your Magento install dir>/app/code`. The structure starts with:
-```
-<VendorName>/<ModuleName>
-```
+
+
+	<VendorName>/<ModuleName>
+
 The reference module requires the following structure:
-```
-M2demo/M2Extension
-```
+
+	M2demo/M2Extension
+
 To add the module to your Magento installation:
 
 1. Log in to your Magento server as a user with privileges to write to the web server docroot (typically either the `root` user or the web server user).
 2. Enter the following commands in the order shown:
-```
-cd <your Magento install dir>/app/code
-mkdir -p M2demo/M2Extension
-```
+
+		cd <your Magento install dir>/app/code
+		mkdir -p M2demo/M2Extension
+
 3. Go to the [reference module GitHub](https://github.com/coldgreentea/m2extension).
 4. Click **Download Zip**.
 5. Copy the `.zip` file you downloaded to your Magento server's `<magento install dir>/app/code/m2demo/module-m2-extension` directory.
