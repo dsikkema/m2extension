@@ -39,22 +39,22 @@ To add the module to your Magento installation:
 4. Click **Download Zip**.
 5. Copy the `.zip` file you downloaded to your Magento server's `<magento install dir>/app/code/m2demo/module-m2-extension` directory.
 6. Enter the following commands in the order shown:
-```
-unzip m2extension-master.zip
-mv m2extension-master/* .
-rm -rf m2extension-master
-```
+
+		unzip m2extension-master.zip
+		mv m2extension-master/* .
+		rm -rf m2extension-master
+
 6. Open `<your Magento install dir>/app/config.php` in a text editor.
 7. Add the following anywhere under: `'modules' => array (`:
-```
-'M2Demo_M2Extension' => 1
-```
+
+		'M2Demo_M2Extension' => 1
+
 8. Save your changes and exit the text editor.
 
 6.	Open `<your Magento install dir>/app/etc/config.php` in a text editor.
 7.	Add the following anywhere under: `'modules' => array (`:
 
-	 <pre>'M2Demo_M2Extension' => 1</pre>
+		'M2Demo_M2Extension' => 1
 
 8.	Save your changes and exit the text editor.
 
@@ -100,32 +100,29 @@ To use Composer to install the module:
 2. Change to your Magento installation directory.
 3. Open `composer.json` in a text editor.
 4. Add the following line in the `"require":` section:
-```
-"m2demo/module-m2-extension": "*"
-```
+
+		"m2demo/module-m2-extension": "*"
+
    **Note**: Make sure the preceding line ends with a comma character.
 
 5. In the `autoload": { "psr-4"` section, add the following line:
-```
-"M2Demo\\": "app/code/M2Demo/"
-```
+
+		"M2Demo\\": "app/code/M2Demo/"
+
    **Note**: Make sure the preceding line ends with a comma character.
 
 6. Save your changes and exit the text editor.
 
 7. From your Magento installation directory, enter the following commands in the order shown:
 
-```
-composer dump-autoload
-composer update
-```
+		composer dump-autoload
+		composer update
+
 
 6. Open `<your Magento install dir>/app/config.php` in a text editor.
 7. Add the following anywhere under: `modules' => array (`:`
 
-```
-'M2Demo_M2Extension' => 1,
-```
+		'M2Demo_M2Extension' => 1,
 
 8. Save your changes and exit the text editor.
 
@@ -135,10 +132,9 @@ composer update
 1. Log in to your Magento server as a user with `root` privileges.
 2. Enter the following commands in the order shown to clear the Magento cache:
 
-```
-cd <your Magento install dir>/var
-rm -rf cache page_cache
-```
+		cd <your Magento install dir>/var
+		rm -rf cache page_cache
+
 
 3. If you're currently logged in to the Magento Admin, log out.
 4. Log in to the Magento Admin as an administrator.
@@ -148,15 +144,11 @@ If **m2demo_module-m2-extension** displays in alphabetical order, you successful
 
 To see the reference module at work, enter the following URL in your browser's address or location field:
 
-```
-http[s]://<your web server IP or host name>/<your Magento base dir>/demo_extension/index/sayhello
-```
+		http[s]://<your web server IP or host name>/<your Magento base dir>/demo_extension/index/sayhello
 
 For example:
 
-```
-http://www.example.com/magento/demo_extension/index/sayhello
-```
+		http://www.example.com/magento/demo_extension/index/sayhello
 
 A list of Magento modules displays. That's it! You're done!
 
