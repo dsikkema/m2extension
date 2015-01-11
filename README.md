@@ -44,13 +44,6 @@ To add the module to your Magento installation:
 		mv m2extension-master/* .
 		rm -rf m2extension-master
 
-6. Open `<your Magento install dir>/app/config.php` in a text editor.
-7. Add the following anywhere under: `'modules' => array (`:
-
-		'M2Demo_M2Extension' => 1
-
-8. Save your changes and exit the text editor.
-
 6.	Open `<your Magento install dir>/app/etc/config.php` in a text editor.
 7.	Add the following anywhere under: `'modules' => array (`:
 
@@ -72,59 +65,29 @@ To use Composer to install the module:
 3.	Open `composer.json` in a text editor.
 4.	Add the following line in the `"require":` section:
 
-	<pre>"m2demo/module-m2-extension": "*"</pre>
+		"m2demo/module-m2-extension": "*"
 
 	**Note**: Make sure the preceding line ends with a comma character.
 
 5.	In the `autoload": { "psr-4"` section, add the following line:
 
-	<pre>"M2Demo\\": "app/code/M2Demo/"</pre>
+		"M2Demo\\": "app/code/M2Demo/"
 
 	**Note**: Make sure the preceding line ends with a comma character.
 
 6.	Save your changes and exit the text editor.
 7.	From your Magento installation directory, enter the following commands in the order shown:
 
-	composer dump-autoload
-	composer update
-
-6.	Open `<your Magento install dir>/app/etc/config.php` in a text editor.
-7.	Add the following anywhere under: `'modules' => array (`:
-
-		'M2Demo_M2Extension' => 1,
-
-8.	Save your changes and exit the text editor.
-
-1. Log in to your Magento server as a user with `root` privileges.
-   **Note**: On Ubuntu, you might need to use the `sudo su` command.
-2. Change to your Magento installation directory.
-3. Open `composer.json` in a text editor.
-4. Add the following line in the `"require":` section:
-
-		"m2demo/module-m2-extension": "*"
-
-   **Note**: Make sure the preceding line ends with a comma character.
-
-5. In the `autoload": { "psr-4"` section, add the following line:
-
-		"M2Demo\\": "app/code/M2Demo/"
-
-   **Note**: Make sure the preceding line ends with a comma character.
-
-6. Save your changes and exit the text editor.
-
-7. From your Magento installation directory, enter the following commands in the order shown:
-
 		composer dump-autoload
 		composer update
 
-
-6. Open `<your Magento install dir>/app/config.php` in a text editor.
-7. Add the following anywhere under: `modules' => array (`:`
+8.	Open `<your Magento install dir>/app/etc/config.php` in a text editor.
+9.	Add the following anywhere under: `'modules' => array (`:
 
 		'M2Demo_M2Extension' => 1,
 
-8. Save your changes and exit the text editor.
+10.	Save your changes and exit the text editor.
+
 
 
 ### Verifying the reference module
