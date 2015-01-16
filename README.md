@@ -1,6 +1,6 @@
-# Reference Extension
+# Reference Module
 
-Thank you for trying the Magento reference extension! We created it to get you started with module development as quickly as possible. Right now it simply displays a list of Magento modules but you can use it to:
+Thank you for trying the Magento reference module! We created it to get you started with module development as quickly as possible. Right now it simply displays a list of Magento modules but you can use it to:
 
 * See the basic components of a Magento module and where they belong
 * Do a quick installation
@@ -11,7 +11,7 @@ Thank you for trying the Magento reference extension! We created it to get you s
 
 You can install the reference module in any of the following ways:
 
-1. By copying the code to your `<magento install dir>/app/code/<VendorName>/<ModuleName>` directory.  
+1. By copying the code to your `<your Magento install dir>/app/code/<VendorName>/<ModuleName>` directory.  
    This method requires some manual tasks but it easy.
 2. Using `composer update`.
 
@@ -80,15 +80,6 @@ To use Composer to install the module:
 
 		composer dump-autoload
 		composer update
-
-8.	Open `<your Magento install dir>/app/etc/config.php` in a text editor.
-9.	Add the following anywhere under: `'modules' => array (`:
-
-		'M2Demo_M2Extension' => 1,
-
-10.	Save your changes and exit the text editor.
-
-
 
 ### Verifying the reference module
 
